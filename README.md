@@ -2,11 +2,18 @@
 
 Outil Python pour analyser des fichiers de logs système et identifier les comportements suspects.
 
-##  Fonctionnalités actuelles
+## 📊 Fonctionnalités
 
 - Analyse des logs SSH (`auth.log`)
-- Détection d'adresses IP avec connexions échouées
-- Affichage des IPs suspectes et nombre de tentatives
+- Détection des IPs avec tentatives de connexion échouées
+- Score de risque automatique
+- Export JSON des résultats
+- Interface web locale (Streamlit)
+
+## 🚀 Lancer l'interface
+
+pip install -r requirements.txt
+streamlit run logsense.py
 
 ## Export des résultats
 
